@@ -1,1 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Shooter - Fun Online Bubble Popping Game | bubbleshooter.pics</title>
+    <meta name="description" content="Play Bubble Shooter online for free. Pop colorful bubbles in this addictive and fun puzzle game with cute piggies. No download required!">
+    <link rel="canonical" href="https://bubbleshooter.pics">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            indigo: '#5856D6',
+                            purple: '#AF52DE',
+                            pink: '#FF2D55',
+                            red: '#FF3B30',
+                            orange: '#FF9500',
+                            yellow: '#FFCC00',
+                            green: '#34C759',
+                            teal: '#5AC8FA',
+                            gray: {
+                                100: '#F5F5F7',
+                                200: '#E5E5EA',
+                                300: '#D1D1D6',
+                                400: '#C7C7CC',
+                                500: '#AEAEB2',
+                                600: '#8E8E93',
+                                700: '#636366',
+                                800: '#48484A',
+                                900: '#3A3A3C',
+                                950: '#1C1C1E'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%;
+            overflow: hidden;
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .bg-gradient {
+            background: linear-gradient(120deg, #5AC8FA, #007AFF);
+        }
+    </style>
+</head>
+<body class="bg-apple-gray-100 text-apple-gray-900">
+    <!-- Header -->
+    <header class="bg-gradient text-white shadow-md">
+        <div class="container mx-auto px-4 py-6 md:py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="text-3xl font-bold mr-2">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">Bubble Shooter</h1>
+                        <p class="text-sm md:text-base opacity-90">Pop bubbles, score points, have fun!</p>
+                    </div>
+                </div>
+                <nav class="flex space-x-4">
+                    <a href="#play" class="py-2 px-4 bg-white text-apple-blue rounded-full font-medium hover:bg-opacity-90 transition duration-300">Play Now</a>
+                    <a href="#about" class="py-2 px-4 bg-transparent border border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition duration-300">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="py-8 md:py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 text-apple-blue">Play Bubble Shooter Online</h2>
+                <p class="text-lg text-apple-gray-700">Match three or more bubbles of the same color to pop them and help the cute piggies in this addictive puzzle game!</p>
+            </div>
+            
+            <!-- Game Section -->
+            <div id="play" class="max-w-4xl mx-auto mb-12 rounded-2xl overflow-hidden shadow-xl">
+                <div class="game-container">
+                    <iframe src="https://www.bubbleshooter.net/game/bubble-piggies/" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 md:py-16 bg-apple-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-gray-900">About Bubble Shooter</h2>
+                
+                <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 mb-8">
+                    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-apple-blue">How to Play</h2>
+                    <p class="text-apple-gray-800 mb-4">Bubble Shooter is a classic puzzle game where your goal is to clear the screen by shooting and popping colorful bubbles. Match three or more bubbles of the same color to make them pop and score points!</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-12 h-12 bg-apple-blue rounded-full flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-mouse-pointer text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Simple Controls</h3>
+                                <p class="text-apple-gray-700">Aim with your mouse or touchscreen and click to shoot bubbles. Plan your shots carefully to create chain reactions!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-12 h-12 bg-apple-green rounded-full flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-trophy text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Score Points</h3>
+                                <p class="text-apple-gray-700">Clear bubbles in large groups to earn bonus points. Challenge yourself to beat your high score!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-md p-6 md:p-8">
+                    <h2 class="text-xl md:text-2xl font-semibold mb-4 text-apple-pink">Game Features</h2>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-apple-pink rounded-full flex items-center justify-center text-white mr-3 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </span>
+                            <div>
+                                <h3 class="font-semibold">Colorful Bubbles</h3>
+                                <p class="text-apple-gray-700">Enjoy vibrant, colorful bubbles that are satisfying to pop!</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-apple-pink rounded-full flex items-center justify-center text-white mr-3 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </span>
+                            <div>
+                                <h3 class="font-semibold">Cute Piggies Theme</h3>
+                                <p class="text-apple-gray-700">Help adorable pig characters in this themed version of the classic game.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-apple-pink rounded-full flex items-center justify-center text-white mr-3 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </span>
+                            <div>
+                                <h3 class="font-semibold">Addictive Gameplay</h3>
+                                <p class="text-apple-gray-700">Easy to learn but challenging to master - perfect for quick gaming sessions!</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-apple-pink rounded-full flex items-center justify-center text-white mr-3 mt-1">
+                                <i class="fas fa-check text-sm"></i>
+                            </span>
+                            <div>
+                                <h3 class="font-semibold">No Download Required</h3>
+                                <p class="text-apple-gray-700">Play instantly in your browser on any device - no installation needed!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-gray-900">Bubble Shooter Strategy Tips</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-apple-gray-100 rounded-2xl p-6">
+                        <div class="text-apple-orange text-2xl mb-4">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Plan Your Shots</h3>
+                        <p class="text-apple-gray-700">Look for opportunities to create chain reactions rather than just shooting at the obvious match.</p>
+                    </div>
+                    
+                    <div class="bg-apple-gray-100 rounded-2xl p-6">
+                        <div class="text-apple-green text-2xl mb-4">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Aim for the Edges</h3>
+                        <p class="text-apple-gray-700">Try to pop bubbles on the edges to create cascading effects and clear large sections at once.</p>
+                    </div>
+                    
+                    <div class="bg-apple-gray-100 rounded-2xl p-6">
+                        <div class="text-apple-blue text-2xl mb-4">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Use Special Bubbles</h3>
+                        <p class="text-apple-gray-700">Take advantage of special bubbles when they appear to clear difficult sections of the board.</p>
+                    </div>
+                    
+                    <div class="bg-apple-gray-100 rounded-2xl p-6">
+                        <div class="text-apple-purple text-2xl mb-4">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Think Strategically</h3>
+                        <p class="text-apple-gray-700">Consider your next few moves, not just the current shot, to set up bigger combos later.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 bg-gradient text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Ready to Start Popping?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Jump into the colorful world of Bubble Shooter now and see how high you can score!</p>
+            <a href="#play" class="py-3 px-8 bg-white text-apple-blue rounded-full font-bold text-lg hover:bg-opacity-90 transition duration-300 inline-block">Play Bubble Shooter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-apple-gray-950 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-6">
+                <h2 class="text-xl font-bold mb-2">Bubble Shooter</h2>
+                <p class="text-apple-gray-400 text-sm">The classic bubble popping game you know and love</p>
+            </div>
+            
+            <div class="border-t border-apple-gray-800 pt-6 mt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-apple-gray-400 text-sm mb-4 md:mb-0">© 2025 bubbleshooter.pics. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-apple-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-apple-gray-400 hover:text-white transition">Terms of Use</a>
+                        <a href="#" class="text-apple-gray-400 hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                // Close mobile menu if open
+                const menu = document.getElementById('mobile-menu');
+                if (menu && !menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
